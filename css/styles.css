@@ -266,7 +266,7 @@ button {
 
 .contact-item .e-mail::before {
     display: inline-block;
-    content:"";
+    content: "";
     width: 16px;
     height: 12px;
     margin-right: 10px;
@@ -278,14 +278,15 @@ button {
 
 .contact-item .tel::before {
     display: inline-block;
-    content:"";
+    content: "";
     width: 10px;
     height: 16px;
     margin-right: 10px;
     padding: 0;
     background-image: url("../images3/svg/smartphone.svg");
     background-size: contain;
-    background-repeat: no-repeat;}
+    background-repeat: no-repeat;
+}
 
 .contact-link {
     display: flex;
@@ -404,6 +405,7 @@ button {
     background: #F5F4FA;
     border-radius: 4px;
 }
+
 .icon-antena::before {
     background-image: url("../images3/svg/antena7.svg");
     background-repeat: no-repeat;
@@ -503,20 +505,9 @@ button {
 }
 
 .team-box {
-    padding: 30px 0;
+    padding: 30px 0 0 0;
+    margin-bottom: 16px;
 }
-
-
-/*.team-cards .social-link::after {
-    display: block;
-    content: "";
-    width: 206px;
-    height: 44px;
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: left 32px top 16px, left 76px top 16px, left 122px top 16px, left 168px top 16px;
-    background-image: url(../images3/svg/instagram2.svg), url(../images3/svg/twitter2.svg), url(../images3/svg/facebook2.svg), url(../images3/svg/linkedin2.svg);
-}*/
 
 .team-section h2 {
     font-weight: bold;
@@ -542,6 +533,61 @@ button {
     line-height: 1.19;
     text-align: center;
     color: var( --main-grey-color);
+}
+
+
+/* Наша команда соц сети*/
+
+.team-item-text {
+    font-size: 14px;
+    line-height: calc(19 / 14);
+    text-align: center;
+    color: var(--active-link-color);
+    margin-bottom: 30px;
+}
+
+.team-item-list {
+    padding-bottom: 30px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.social-item {
+    width: 44px;
+    height: 44px;
+}
+
+.social-item+.social-item {
+    margin-left: 10px;
+}
+
+.social-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--main-light-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--active-link-color);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+    fill: var(--main-light-color);
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
 }
 
 
