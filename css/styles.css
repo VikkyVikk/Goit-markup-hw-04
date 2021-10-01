@@ -264,28 +264,30 @@ button {
 
 /* E-mail Tel*/
 
-.contact-item .e-mail::before {
-    display: inline-block;
-    content: "";
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    padding: 0;
-    background-image: url("../images3/svg/envelope.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
+.contact-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.contact-item .tel::before {
-    display: inline-block;
-    content: "";
-    width: 10px;
+.contact-icon {
+    display: flex;
     height: 16px;
+    justify-content: center;
+    align-items: center;
     margin-right: 10px;
-    padding: 0;
-    background-image: url("../images3/svg/smartphone.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
+}
+
+.icon-envelope:hover,
+.icon-envelope:focus,
+.icon-smartphone:hover,
+.icon-smartphone:focus {
+    fill: currentColor;
+}
+
+.icon-envelope,
+.icon-smartphone {
+    fill: var(--main-grey-color);
 }
 
 .contact-link {
@@ -389,14 +391,14 @@ button {
 }
 
 .properties-item {
-    display: block;
+    display: flexbox;
     width: 270px;
-    text-align: start;
+    padding: 0px;
+    text-align: left;
 }
 
-.properties-item::before {
-    display: block;
-    content: "";
+.properties-icon {
+    display: flex;
     height: 120px;
     margin-bottom: 30px;
     background-size: contain;
@@ -404,30 +406,8 @@ button {
     background-position: center;
     background: #F5F4FA;
     border-radius: 4px;
-}
-
-.icon-antena::before {
-    background-image: url("../images3/svg/antena7.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.icon-clock::before {
-    background-image: url("../images3/svg/clock7.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.icon-diagrama::before {
-    background-image: url("../images3/svg/diagram7.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.icon-astronaut::before {
-    background-image: url("../images3/svg/astronaut7.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-properties h3 {
